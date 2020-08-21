@@ -81,11 +81,11 @@ body{
   margin-top: 5%;
   height: 100vh;
   text-align: center;
-  padding: 30px;
+  padding: 0px
 }
 
 .photo_container{
-  
+  margin: 0px 30px 0px 30px;
 }
 
 .sticky{
@@ -97,10 +97,26 @@ body{
   padding-left: 10px;
 }
 
+/* 全画面表示、横長写真表示調節 */
+.objfit_land{
+  height: 90vh;
+  object-fit: scale-down;
+  vertical-align: bottom;
+}
+
+/* 全画面表示、縦長写真表示調節 */
+.objfit_port{
+  height: 90vh;
+  object-fit: scale-down;
+  vertical-align: bottom;
+}
+
+/* 全画面表示、タイトル表示 */
 .photo_title{
   font-family: 'Noto Serif JP', serif;
 }
 
+/* 作品説明、親 */
 .caption{
   height: 100vh;
   padding: 20px;
@@ -108,20 +124,25 @@ body{
   align-items: center;
 }
 
+/* 作品説明、写真の幅 */
 .caption_photo{
   flex: 1;
 }
 
-.caption_photo_example{
-  width: 100%;
+/* キャプション横長写真表示調節 */
+.caption_photo_example_land{
+  height: 60vh;
+  object-fit: scale-down;
 }
 
+/* キャプション縦長写真表示調節 */
+.caption_photo_example_port{
+  height: 70vh;
+  object-fit: scale-down;
+}
+
+/* 作品説明、説明文の設定 */
 .caption_text{
   font-family: 'Noto Serif JP', serif;
   flex: 1;
-}
-
-#photo_no1{
-  width: 70%;
-  vertical-align: bottom;
 }
