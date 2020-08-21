@@ -88,9 +88,17 @@ body{
   
 }
 
+.sticky{
+  position: sticky;
+  font-family: "游ゴシック Medium", "游ゴシック体", sans-serif;
+  font-size: 50px;
+  color: rgba(0, 0, 0, 0.5);
+  top: 10px;
+  padding-left: 10px;
+}
+
 .photo_title{
   font-family: 'Noto Serif JP', serif;
-
 }
 
 .caption{
