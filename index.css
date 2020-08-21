@@ -89,7 +89,7 @@ body{
 }
 
 .photo_title{
-    font-family: 'Noto Serif JP', serif;
+  font-family: 'Noto Serif JP', serif;
 
 }
 
@@ -101,10 +101,16 @@ body{
 }
 
 .caption_photo{
+  flex: 1;
 }
 
 .caption_photo_example{
   width: 100%;
+}
+
+.caption_text{
+  font-family: 'Noto Serif JP', serif;
+  flex: 1;
 }
 
 #photo_no1{
