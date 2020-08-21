@@ -76,3 +76,38 @@ body{
 .text_right{
   text-align: right;
 }
+
+.photo{
+  margin-top: 5%;
+  height: 100vh;
+  text-align: center;
+  padding: 30px;
+}
+
+.photo_container{
+  
+}
+
+.photo_title{
+    font-family: 'Noto Serif JP', serif;
+
+}
+
+.caption{
+  height: 100vh;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.caption_photo{
+}
+
+.caption_photo_example{
+  width: 100%;
+}
+
+#photo_no1{
+  width: 70%;
+  vertical-align: bottom;
+}
