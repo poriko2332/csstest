@@ -127,6 +127,7 @@ body{
 /* 作品説明、写真の幅 */
 .caption_photo{
   flex: 1;
+  text-align: center;
 }
 
 /* キャプション横長写真表示調節 */
