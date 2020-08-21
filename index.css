@@ -5,7 +5,7 @@ body{
 
 .top{
   height: 100vh;
-  background-image: url("./image/green.jpg");
+  background-image: url("./image/sky.jpg");
   background-size: cover;
   position: relative;
 }
@@ -92,8 +92,9 @@ body{
   position: sticky;
   font-family: "游ゴシック Medium", "游ゴシック体", sans-serif;
   font-size: 50px;
-  color: rgba(0, 0, 0, 0.5);
+  /* color: rgba(0, 0, 0, 0.5); */
   top: 10px;
+  text-align: left;
   padding-left: 10px;
 }
 
@@ -178,7 +179,8 @@ body{
 
 #sns_share{
   height: 100vh;
-  padding: 100px;
+  text-align: center;
+  background-image: url("./image/sky.jpg");
 }
 
 iframe{
@@ -188,6 +190,17 @@ iframe{
   border-width: 1px;
 }
 
-.twitter-time-line{
-  
+/* 背景色を黒、コメントボックスの色を反転 */
+#no2{
+  background-color: black;
+  color: white;
+}
+
+#no2 .comment_box {
+  border: solid white;
+}
+
+#no2 .comment_box .box-title{
+  background: black;
+  color: white;
 }
