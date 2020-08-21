@@ -176,9 +176,18 @@ body{
     padding: 0;
 }
 
+#sns_share{
+  height: 100vh;
+  padding: 100px;
+}
+
 iframe{
   width: 80%;
   height: 400px;
   border-style: solid;
   border-width: 1px;
+}
+
+.twitter-time-line{
+  
 }
