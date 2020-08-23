@@ -150,20 +150,21 @@ body{
 .caption_photo_slide{
   flex: 1;
   text-align: center;
-  align-items: center;
   position: relative;
   width: 100%;
-  padding-top: 200px;
+  padding-top: 400px;
+
 }
 
 /* キャプションスライド関連 */
 .caption_photo_slide > img{
   position: absolute;
-  left: 0;
+  left: 25%;
   top: 0;
+  width: 70%;
 }
 
-.captionn_phpto_slide input[name='switch']{
+.caption_photo_slide input[name='switch']{
   display: none;
 }
 
@@ -171,12 +172,25 @@ body{
 .caption_photo_slide label{
   margin: 15px 5px 0 5px;
   display: inline-block;
-  cursor: pointer;;
+  cursor: pointer;
 }
 
 .caption_photo_slide label img{
   display: block;
   width: 40px;
+}
+
+.caption_photo_slide input[name='switch']:checked + label {
+  border: 2px solid red;
+  opacity: 1;
+}
+
+.caption_photo_slide input[name='switch'] ~ img {
+  opacity: 0;
+}
+
+.caption_photo_slide input[name='switch']:checked + label + img {
+  opacity: 1;
 }
 
 /* 作品説明、説明文の設定 */
