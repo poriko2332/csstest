@@ -146,6 +146,39 @@ body{
   object-fit: scale-down;
 }
 
+/* スライドコンテナ */
+.caption_photo_slide{
+  flex: 1;
+  text-align: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  padding-top: 200px;
+}
+
+/* キャプションスライド関連 */
+.caption_photo_slide > img{
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.captionn_phpto_slide input[name='switch']{
+  display: none;
+}
+
+/* サムネイル */
+.caption_photo_slide label{
+  margin: 15px 5px 0 5px;
+  display: inline-block;
+  cursor: pointer;;
+}
+
+.caption_photo_slide label img{
+  display: block;
+  width: 40px;
+}
+
 /* 作品説明、説明文の設定 */
 .caption_text{
   font-family: 'Noto Serif JP', serif;
@@ -203,4 +236,22 @@ iframe{
 #no2 .comment_box .box-title{
   background: black;
   color: white;
+}
+
+/* 組写真グリッドレイアウト */
+#no3 .photo_container{
+  display: grid;
+  height: 80%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+#photo_no3{
+  grid-row: 1 / 3;
+}
+
+#photo_no3,#photo_no4,#photo_no5{
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
 }
