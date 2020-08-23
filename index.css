@@ -152,44 +152,61 @@ body{
   text-align: center;
   position: relative;
   width: 100%;
-  padding-top: 400px;
-
 }
 
-/* キャプションスライド関連 */
-.caption_photo_slide > img{
+.caption_photo_slide .caption_photo_imgbox{
+  width: 100%;
+  height: 600px;
+  position: relative;
+}
+
+.caption_photo_slide .caption_photo_imgbox img {
   position: absolute;
-  left: 25%;
-  top: 0;
-  width: 70%;
+  opacity: 0;
+  top: 200px;
+  left: -10px;
+  width: 100%;
+  height: 60%;
+  object-fit: scale-down;
+  transition: .4s;
 }
 
-.caption_photo_slide input[name='switch']{
-  display: none;
+.caption_photo_slide ul {
+  padding: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  align-items: center;
 }
 
-/* サムネイル */
-.caption_photo_slide label{
-  margin: 15px 5px 0 5px;
-  display: inline-block;
+.caption_photo_slide li {
+  width: 30%;
+}
+
+.caption_photo_slide li label {
+  display: block;
+}
+
+.caption_photo_slide li img {
+  width: 50%;
+  height: auto;
   cursor: pointer;
 }
 
-.caption_photo_slide label img{
-  display: block;
-  width: 40px;
+#no3_sum01, #no3_sum02, #no3_sum03 {
+  display: none;
 }
 
-.caption_photo_slide input[name='switch']:checked + label {
-  border: 2px solid red;
+#no3_sum01:checked ~ .caption_photo_imgbox img:nth-child(1){
   opacity: 1;
 }
 
-.caption_photo_slide input[name='switch'] ~ img {
-  opacity: 0;
+#no3_sum02:checked ~ .caption_photo_imgbox img:nth-child(2){
+  opacity: 1;
 }
 
-.caption_photo_slide input[name='switch']:checked + label + img {
+#no3_sum03:checked ~ .caption_photo_imgbox img:nth-child(3){
   opacity: 1;
 }
 
