@@ -291,7 +291,7 @@ iframe{
   object-fit: scale-down;
 }
 
-@media screen and (max-width:650px){
+@media screen and (max-width:480px){
   .title{
     font-size: 5em;
   }
@@ -312,17 +312,13 @@ iframe{
     width: 100%;
   }
 
-  .caption_text h2{
-    display: none;
-  }
-
   .caption{
     height: auto;
     padding: 0;
     flex-flow: column;
   }
 
-  .caption_photo{
+  .caption_text h2{
     display: none;
   }
 
@@ -330,11 +326,41 @@ iframe{
     align-items: center;
   }
 
+  .caption_photo{
+    display: none;
+  }
+
   .comment_box{
     margin: 2em 1em;
   }
+
   iframe{
     width: 90%;
   }
-  
+}
+
+@media screen and (min-width: 481px) and (max-width: 896px){
+  .photo{
+    height: auto;
+  }
+
+  .caption{
+    height: auto;
+    padding: 0 20vw;
+    flex-flow: column;
+  }
+
+  .caption_text h2 {
+    display: none;
+  }
+
+  .caption_text{
+    align-items: center;
+  }
+
+  .caption_photo{
+    display: none;
+  }
+
+
 }
